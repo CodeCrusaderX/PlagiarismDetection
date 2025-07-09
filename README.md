@@ -1,45 +1,55 @@
-# Plagarism Detector
-The Plagiarism Detector project provides a comprehensive solution for detecting plagiarism and finding similarities between text documents. Leveraging the power of natural language processing (NLP), web scraping techniques, and data visualization tools, the project offers users a user-friendly interface to input text or upload files for analysis. The system employs algorithms such as tokenization, cosine similarity calculation, and web scraping to extract relevant information and compare text content. Through an intuitive web application built using Streamlit, users can easily identify potential instances of plagiarism or similarities between documents. The project also includes interactive visualizations, powered by Plotly and Plotly Express, to present the results in a clear and informative manner. Overall, the Plagiarism Detector project serves as a valuable tool for educators, researchers, and content creators to ensure the integrity and originality of written work.
+# 🧠 Plagiarism Detector
 
-## Features
+The **Plagiarism Detector** project is a comprehensive solution for detecting plagiarism and identifying similarities between text documents. Leveraging Natural Language Processing (NLP), web scraping, and advanced data visualization, this tool enables users to easily analyze documents for originality through a streamlined Streamlit-based web interface.
 
-- Light/dark mode toggle
-- Fullscreen mode
-- Flexible Input Options 
-- Comprehensive Analysis
-- Web Scraping Capabilities
-- Advanced Similarity Measurement
-- Interactive Visualizations
-- User-Friendly Interface
+---
 
-## Tech Stack
+## ✨ Features
 
-**Client:** Streamlit, HTML/CSS.
+- 🌓 Light/Dark mode toggle
+- 🖥️ Fullscreen viewing experience
+- 📄 Flexible input (text or file upload)
+- 📊 Advanced similarity measurement using NLP
+- 🌐 Web scraping to compare with online sources
+- 📈 Interactive visualizations (Plotly)
+- 🧠 Tokenization and cosine similarity calculations
+- ⚙️ Simple and intuitive UI (Streamlit)
 
-**Server:** Python
+---
 
-**Libraries & Algorithms:** 
+## 🛠️ Tech Stack
 
-*Libraries:*
-- Pandas
-- NLTK (Natural Language Toolkit)
-- Beautiful Soup
-- CountVectorizer and cosine_similarity from scikit-learn
-- docx2txt
-- PyPDF2
-- plotly.express (px)
-  
-*Algorithms:*
-- Tokenization
-- Cosine Similarity
-- Web Scraping
-- Document Retrieval
+**Client:**  
+- Streamlit  
+- HTML/CSS
+
+**Server:**  
+- Python
+
+**Libraries Used:**  
+- `pandas`  
+- `nltk` (Natural Language Toolkit)  
+- `BeautifulSoup4`  
+- `scikit-learn` (`CountVectorizer`, `cosine_similarity`)  
+- `docx2txt`  
+- `PyPDF2`  
+- `plotly.express`
+
+**Algorithms:**  
+- Tokenization  
+- Cosine Similarity  
+- Web Scraping  
+- Document Retrieval  
 - Data Visualization
 
+---
 
-## Usage/Examples
+## 🚀 Usage / Examples
 
 ```python
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
 def get_similarity(text1, text2):
     text_list = [text1, text2]
     cv = CountVectorizer()
@@ -58,69 +68,18 @@ def get_similarity_list(texts, filenames=None):
     return similarity_list
 ```
 
-## Run Locally
+# Clone the repository
+git clone https://github.com/CodeCrusaderX/PlagiarismDetection.git
 
-Clone the project
+# Navigate into the project directory
+cd PlagiarismDetection
 
-```bash
-  git clone https://github.com/Karthik-02/plagiarism-detection.git
-```
+# Install dependencies
+pip install -r requirements.txt
 
-Go to the project directory
-
-```bash
-  cd plagiarism-detection
-```
-
-Install dependencies
-
-```bash
-  pip install -r requirements.txt
-```
-
-Start the server
-
-```bash
-  streamlit run app.py
-```
-## Screenshots
-![image](https://github.com/Karthik-02/plagiarism-detection/assets/81423983/68ab81eb-da46-4180-b25e-5cd88a609da9)
-
-![image](https://github.com/Karthik-02/plagiarism-detection/assets/81423983/e0c97e0b-1122-4d28-ba46-95b16017d901)
-
-![image](https://github.com/Karthik-02/plagiarism-detection/assets/81423983/09ebf7bc-1736-4927-a2e1-c27616831f35)
-
-![image](https://github.com/Karthik-02/plagiarism-detection/assets/81423983/6b02553c-4c4c-4359-a551-b0f30067a0ba)
-
-![image](https://github.com/Karthik-02/plagiarism-detection/assets/81423983/77223ada-a79b-419b-b1af-08aa58e0fc84)
-
-![image](https://github.com/Karthik-02/plagiarism-detection/assets/81423983/0744bc50-6840-4893-a7c3-99e7834ab747)
-
-## Authors
-- [@KarthikS](https://www.github.com/Karthik-02)
-  
+# Start the Streamlit app
+streamlit run app.py
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Badges
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+👨‍💻 Author
+	•	Your Name – @CodeCrusaderX
